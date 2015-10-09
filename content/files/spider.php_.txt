@@ -1,0 +1,65 @@
+<?php
+
+$proxy = array(
+'tcp://200.80.54.210:3129',
+'tcp://216.114.46.17:3128',
+'tcp://78.46.145.194:3128',
+'tcp://201.45.252.99:3128',
+'tcp://89.28.64.114:8080',
+'tcp://216.59.225.218:312',
+'tcp://84.203.233.22:3128',
+'tcp://189.54.44.25:3128',
+'tcp://212.119.106.54:808',
+'tcp://81.182.248.228:808',
+'tcp://217.23.4.221:3128',
+'tcp://116.214.26.136:312',
+'tcp://202.29.58.33:3128',
+'tcp://70.89.102.42:3128',
+'tcp://91.83.215.1:3128',
+'tcp://111.1.32.149:80',
+'tcp://64.120.135.34:8080',
+'tcp://98.118.126.107:3128',
+'tcp://216.114.46.16:3128',
+'tcp://67.205.68.11:80',
+'tcp://213.33.180.42:80',
+'tcp://190.253.95.219:8080',
+'tcp://187.103.239.1:3128',
+'tcp://80.78.65.21:8080',
+'tcp://81.180.66.34:8080',
+'tcp://87.120.215.220:3128',
+'tcp://189.100.47.97:3128',
+'tcp://189.26.236.87:3128',
+'tcp://89.175.22.247:8080',
+'tcp://187.87.206.39:8080',
+);
+
+function getId()
+{
+    return (rand() % 9000) + 1921000; 
+}
+
+function getUrl($id)
+{
+    // http://portal.acm.org/citation.cfm?id=1922269.1922271&preflayout=flat
+    return 'http://portal.acm.org/citation.cfm?id=1922269.' . $id . '&preflayout=flat';
+}
+
+srand(time(null));
+while(1) {
+    $aContext = array(
+	'http' => array(
+	    'proxy' => $proxy[rand() % count($proxy)], // This needs to be the server and the port of the NTLM Authentication Proxy Server.
+	    'request_fulluri' => True,
+	    ),
+	);
+    $cxContext = stream_context_create($aContext);
+    $id = getId();
+    $str = file_get_contents(getUrl($id), false, $cxContext);
+
+    if($str) {
+	echo $str . PHP_EOL;
+	$fd = fopen('data/data-' . $id, 'w');
+	fwrite($fd, $str);
+	fclose($fd);
+    }
+}
