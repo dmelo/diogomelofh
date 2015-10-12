@@ -1,5 +1,6 @@
 /*
 Title: Welcome
+<<<<<<< HEAD
 Description: Welcome to diogomelo.net 
 PageType: page
 PageTitle: welcome
