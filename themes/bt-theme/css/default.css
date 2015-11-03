@@ -51,12 +51,15 @@ h3 {
   }
 
 
-li.amuzi {
-    margin-top: 100%;
+li.ads {
     text-align: center;
 }
 
-li.amuzi button {
+li.ads a {
+    padding-top: 20px;
+}
+
+li.ads button {
     background-color: transparent;
     border: 1px solid #999999;
     -webkit-border-radius: 5px;
