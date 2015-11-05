@@ -1,16 +1,18 @@
 /*
-Title: Convert compressed disk image to virtual machine (Virtualbox)
+Title: Convert compressed disk image to (and from) virtual machine (Virtualbox)
 Descprition: Given a disk image, this post describes how to create a virtual
 machine out of it.
 Date: 2015/11/05
 */
 
 On a [previous post](/blog/15/using-dd-and-lzma-to-backup-and-restore-a-disk)
-I have documented how a way to backup and restore a disk, using *dd* and
-*lzma*.
+I have documented how a way to backup and restore a disk, using `dd` and
+`lzma`.
 
 Now, it is time to create a virtual machine out of the compressed backup image
 without the need to uncompress the image to an intermediate file.
+
+## Convert from compressed image to VirtualBox VM
 
 The only constraint is that you must know, in advance, the size (in bytes) of
 the uncompressed image. Here is the command:
@@ -31,3 +33,12 @@ After creating the VDI, you can open VitualBox and create a new VM, with that
 existing diskt, instead of the default option of creating a new one. A special
 reminder. In my case, I'm working with 64-bit machines, it is important to
 specify that it is a 64-bit OS, while creating the new VM.
+
+## Convert from VirtualBox VM to compressed image
+
+No secret here, use VBoxManage to generate the raw image and then compress it.
+I have found no way to dump the image to stdout in order to pipe it for
+compression. So, I'm building a raw intermediate file:
+
+    VBoxManage clonehd disk.vdi disk.img --format RAW
+    lzma -z -T 4 -9e disk.img

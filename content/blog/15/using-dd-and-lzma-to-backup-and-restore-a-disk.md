@@ -28,7 +28,7 @@ Here is an example:
 
 To take an image of the sda, the command would be:
 
-    dd if=/dev/sda bs=512 count=121522176 | lzma -z -T 4 -9a > /mnt/disk.img.lzma
+    dd if=/dev/sda bs=512 count=121522176 | lzma -z -T 4 -9e > /mnt/disk.img.lzma
     
 121522176 is the last sector plus one. About the lzma command, `-9e` is the
 compression level which, in this case, is maximum compression. `-T 4` says
