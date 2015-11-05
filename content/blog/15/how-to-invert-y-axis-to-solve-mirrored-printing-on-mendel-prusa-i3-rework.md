@@ -1,7 +1,7 @@
 /*
 Title: How to invert y axis to solve mirrored printing on mendel prusa i3 rework 
 Descprition: How to invert an axis to solve mirrored printing behaiour.
-Date: 2015/11/4
+Date: 2015/11/04
 */
 
 

@@ -44,7 +44,7 @@ the filesystem.
 
 Here is the command to restore the disk:
 
-    lzma -cd /mnt/totem-embedded-1.0.0.img.lzma | dd of=/dev/sda bs=4k
+    lzma -cd /mnt/disk.img.lzma | dd of=/dev/sda bs=4k
 
 The `bs` doesn't need to match the value used on the previous section, 4k is a
 value that delivers a good speed on disks that I have used so far. Refer to
