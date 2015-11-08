@@ -61,6 +61,17 @@
                             {% if meta.title %}<h1>{{ meta.title }}</h1>{% endif %}
                             {% if meta.date %} <p class="meta">{{ meta.date }}</p> {% endif %}
 
+                            {% if meta.tags %}
+                                <article>
+                                    <p class="meta">Tags:
+                                        {% for tag in meta.tags %}
+                                            <a href="{{ base_url }}/tag/{{ tag }}">#{{ tag }}</a>
+                                        {% endfor %}
+                                    </p>
+                                </article>
+                            {% endif %}
+
+
                             {{ content }}
 
                             {% if meta.page_type == 'page' and meta.page_name == 'blog' %}
@@ -73,9 +84,29 @@
                                     </div>
                                     {% endif %}
                                 {% endfor %}
+
+                            {% elseif pages and meta.title matches '/^#/' %}
+                            <!-- tags page -->
+                                All tags:
+                                <ul class="tags">
+                                    {% for tag in tag_list %}
+                                    <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                                <p>Posts tagged <a href="{{ page.url }}">#{{ current_tag }}</a>:</p>
+                                {% for page in pages %}
+                                    {% if page.date %}
+                                        <article>
+                                            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                                        </article>
+                                    {% endif %}
+                                {% endfor %}
+                            <!-- tags page -->
                             {% endif %}
 
                                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
+
 
                             {% if meta.date %}
                             {{ disqus_comments }}
