@@ -96,9 +96,11 @@
                                 <p>Posts tagged <a href="{{ page.url }}">#{{ current_tag }}</a>:</p>
                                 {% for page in pages %}
                                     {% if page.date %}
-                                        <article>
-                                            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-                                        </article>
+                                    <div class="post">
+                                        <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+                                        <p class="meta">{{ page.date }}</p>
+                                        <p class="excerpt">{{ page.excerpt }}</p>
+                                    </div>
                                     {% endif %}
                                 {% endfor %}
                             <!-- tags page -->
