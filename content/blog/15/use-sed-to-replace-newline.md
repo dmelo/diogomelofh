@@ -13,7 +13,8 @@ syntax. Here is the command to replace newline by a comma:
 
 I've got this code from [this stackoverflow question](http://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed).
 
-Update: If the idea is to drop / skip empty lines, you can use grep:
+
+*Update [2015-11-16]*: If the idea is to drop / skip empty lines, you can use grep:
 
     grep -v -e "^$"
 
