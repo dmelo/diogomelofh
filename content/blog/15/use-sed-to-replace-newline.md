@@ -12,3 +12,14 @@ syntax. Here is the command to replace newline by a comma:
     sed ':a;N;$!ba;s/\n/,/g'
 
 I've got this code from [this stackoverflow question](http://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed).
+
+Update: If the idea is to drop / skip empty lines, you can use grep:
+
+    grep -v -e "^$"
+
+Careful not to be fooled white chars. If you also want to drop lines that have
+only white chars you can use:
+
+    grep -v -e '^[[:space:]]*$'
+
+The above tip, I've got from [another stackoverflow question](http://stackoverflow.com/questions/3432555/remove-blank-lines-with-grep).
