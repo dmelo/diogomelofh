@@ -12,3 +12,7 @@ the answer for me is this command:
 
 It will serve the content on the current path. If you know a better answer,
 please let me know.
+
+*Update [2015-11-17]*: Another way is to user PHP built in server, as suggested by [Subin Siby](https://disqus.com/by/subins2000/):
+
+    php -S 0.0.0.0:8080
