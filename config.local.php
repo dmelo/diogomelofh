@@ -1,6 +1,6 @@
 <?php
 
-return array_merge(
+$config = array_merge(
     // config.ini will apply both on your local instance and on the mdownhostme
     // instance.
     parse_ini_file(__DIR__ . '/config.ini', true),
