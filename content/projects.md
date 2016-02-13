@@ -40,7 +40,7 @@ and fun to get it working.
 The project is at [MDownHost.Me](http://mdownhost.me). It is entirely free.
 
 
-VSNM
+VSWM
 ----
 
 In 2005 I've become a Linux guy, finally joined the light. I have learned then,
@@ -57,12 +57,12 @@ often use custom routing rules. Having NetworkManager re-checking and
 re-connecting on my behalf messed up my custom rules.
 
 Moreover, the commands to stablish a wireless connection are tedious. The
-solution was to build VSNM -- Very Simple Network Manager. It reads the file
-/etc/vsnm.cfg for the wifi networks I known, perform a scan and connect to
+solution was to build VSWM -- Very Simple Wireless Manager. It reads the file
+/etc/vswm.cfg for the wifi networks I known, perform a scan and connect to
 the first match. It does that and only that.
 
 The project is open source and also available on GitHub
-[dmelo/vsnm](https://github.com/dmelo/vsnm.git).
+[dmelo/vswm](https://github.com/dmelo/vswm.git).
 
 
 USPDS
