@@ -40,8 +40,8 @@ and fun to get it working.
 The project is at [MDownHost.Me](http://mdownhost.me). It is entirely free.
 
 
-VSWM
-----
+[VSWM](/vswm)
+-------------
 
 In 2005 I've become a Linux guy, finally joined the light. I have learned then,
 that you are better off knowing how to do things using the terminal, command
