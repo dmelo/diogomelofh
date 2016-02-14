@@ -13,6 +13,9 @@ Introduction
 My name is Diogo Melo and I am from Brazil. I live in São Carlos, São Paulo.
 I am a software developer and movie/chocolate/coffee lover.
 
+- GitHub:  [/dmelo](https://github.com/dmelo)
+- Email: [dmelo87@gmail.com](mailto:dmelo87@gmail.com)
+
 
 Work
 ------
