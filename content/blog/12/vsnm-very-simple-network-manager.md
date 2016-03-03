@@ -2,6 +2,7 @@
 Title: VSNM - Very Simple Network Manager
 Description: The code is written in python and is very easy to use. It can be found here https://github.com/dmelo/vsnm .
 Date: 2012/07/28
+Tags: linux,vswm
 */
 
 The code is written in python and is very easy to use. It can be found here
@@ -16,3 +17,10 @@ So I've created vsnm. For now, it only supports wifi (WPA/WPA2 and WEP) which,
 I believe, are the most critical to have.
 
 Have fun ;)
+
+*Update (2016-02-19): I have renamed the project to VSWM (Very Simple Wireless
+Manager) since the software deals exclusively with wireless networks. The GitHub
+link for the project is
+[https://github.com/dmelo/vswm](https://github.com/dmelo/vswm).*
+
+
