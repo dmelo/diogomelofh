@@ -10,8 +10,8 @@ open project I version it there. Anyway, this page have the projects I am the
 most enthusiastic about.
 
 
-Amuzi
------
+[Amuzi](http://amuzi.me)
+------------------------
 
 The project is hosted at [amuzi.me](http://amuzi.me). It allows people to
 listen to music. The project is open source, the code is on GitHub
@@ -23,8 +23,8 @@ on the project [jPlayer](http://jplayer.org/). Amuzi interacts with Youtube and
 music, respectively.
 
 
-MDownHost.Me
-------------
+[MDownHost.Me](http://mdownhost.me)
+-----------------------------------
 
 Some time ago I was using Drupal to keep this site/blog. Drupal is awesome,
 BUT... I like things simple and I'm a software developer, which means I proficient
@@ -65,8 +65,8 @@ The project is open source and also available on GitHub
 [dmelo/vswm](https://github.com/dmelo/vswm.git).
 
 
-USPDS
------
+[USPDS](https://github.com/dmelo/uspds.git)
+-------------------------------------------
 
 During my undergraduate research, I have developed a robot soccer simulator for
 the MiroSot category with 3 players. The project is open source. It was first
