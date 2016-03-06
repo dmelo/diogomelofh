@@ -22,6 +22,19 @@ on the project [jPlayer](http://jplayer.org/). Amuzi interacts with Youtube and
 [last.fm](http://www.last.fm/) to get music content and link to data about the
 music, respectively.
 
+[You2Better](https://github.com/dmelo/you2better)
+-------------------------------------------------
+
+Instead of build the streaming system within Amuzi, I did it as a separate
+project. The scope of You2Better is very well defined and simple: provide an
+entrypoint to stream content from YouTube. By developing it on a different
+project, I enable other developers to use it. They can just install You2Better
+and use it, there is no need to dive into Amuzi. Moreover, it is easier to
+maintain the code. 
+
+Refer to the [You2Better](/blog/16/You2Better) post or the GitHub page
+[dmelo/you2better](https://github.com/dmelo/you2better) for further information.
+
 
 [MDownHost.Me](http://mdownhost.me)
 -----------------------------------
