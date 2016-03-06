@@ -85,7 +85,8 @@ During my undergraduate research, I have developed a robot soccer simulator for
 the MiroSot category with 3 players. The project is open source. It was first
 distributed on the [USPDroids site](http://uspds.sourceforge.net/simulacao.html).
 Later on I versioned with Git and put it on GitHub
-[dmelo/uspds](https://github.com/dmelo/uspds.git).
+[dmelo/uspds](https://github.com/dmelo/uspds.git). There is also a video of the
+simulator running on Yoube [USPDS](https://www.youtube.com/watch?v=x0KvdyENjo0).
 
 I remember I had a really nice time developing the simulator. It happend around
 2007 and 2008. I was young and naive. Instead of looking for a physics engine
@@ -94,4 +95,6 @@ foolish, I believe it was a great exercise. It got me envolved with a lot of
 code and I've got to interact with researchers from the physics department. That
 was when I started to admire the way physicists think.
 
-
+After I left the USPDroids group, they worked on a version 2 of the USPDS, to
+improve usability mainly. You can see it working on the YouTube video
+[USPDroids Soccer Simulator 2](https://www.youtube.com/watch?v=lcdk0_Lv2fc).
