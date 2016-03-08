@@ -2,6 +2,7 @@
 Title: How to Connect to Oracle Database With PHP Zend Framework
 Description: Start by installing Oracle Instant Client basic and devel/sdk provided by oracle...
 Date: 2013/03/14
+Tags: linux,fedora,php
 */
 
 Start by installing Oracle Instant Client basic and devel/sdk provided by oracle
