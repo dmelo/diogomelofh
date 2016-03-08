@@ -3,6 +3,7 @@ Title: Convert compressed disk image to (and from) virtual machine (Virtualbox)
 Descprition: Given a disk image, this post describes how to create a virtual
 machine out of it.
 Date: 2015/11/05
+Tags: linux,dd,vm
 */
 
 On a [previous post](/blog/15/using-dd-and-lzma-to-backup-and-restore-a-disk)

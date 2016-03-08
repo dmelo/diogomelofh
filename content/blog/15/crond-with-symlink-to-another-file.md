@@ -2,6 +2,7 @@
 Title: Cron.d with symlink to another file
 Descprition: Cron.d not always work well with symlinks, here is how to make it work.
 Date: 2015/11/05
+Tags: linux
 */
 
 If you place a symlink inside `/etc/cron.d/`, odds are that it isn't gonna work.

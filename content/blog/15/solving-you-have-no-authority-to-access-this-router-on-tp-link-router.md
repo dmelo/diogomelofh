@@ -3,6 +3,7 @@ Title: Solving "You have no authority to access this router" on TP-Link router
 Description: How to overcome the "You have no authority to access this router"
 message shown by the TP-Link router.
 Date: 2015/09/02
+Tags: linux
 */
 
 
