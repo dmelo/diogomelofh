@@ -16,10 +16,20 @@ the file name, not the full path. I would open the `Entity.java` just by typing:
 
     vimf Entity.java
 
-To make it work nicely, I have appended my ~/.bashrc with the funciton definition:
+To make it work nicely, I have appended my `~/.bashrc` with the funciton definition:
 
-    function vimf ()
-    {
-        vim `find -name $@`
-    }
+```bash
+function vimf ()
+{
+    vim `find -name $@`
+}
 
+```
+
+*Update [2016-03-09]*: I also added an alias do `f='find -name'` to save a few
+keystrokes inside vim, to run commands linke `tabe 'f Entity.java'`. Append
+~/.bashrc with the following:
+
+```bash
+alias f='find -name'
+```
