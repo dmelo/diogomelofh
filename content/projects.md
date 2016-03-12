@@ -35,6 +35,22 @@ maintain the code.
 Refer to the [You2Better](/blog/16/You2Better) post or the GitHub page
 [dmelo/you2better](https://github.com/dmelo/you2better) for further information.
 
+[lastfm-autocomplete](https://github.com/dmelo/lastfm-autocomplete)
+-------------------------------------------------------------------
+
+This is another spin off project from Amuzi. The project needed a search box,
+preferably with autocomplete feature. At first, Amuzi was getting the results
+from [amuzi_search](https://github.com/dmelo/amuzi_search), which is an
+implementation of Suffix Arrays, that I have developed.
+
+After some problems, I felt the need to change the autocomplete and
+lastfm-autocomplete jQuery plugin came up. It uses CORS to query Last.fm
+directly. You can see the results on the [Amuzi](http://amuzi.me) site or on
+the [lastfm-autocopmlete live demo](http://diogomelo.net/lastfm-autocomplete/).
+
+The code is available on GitHub
+[dmelo/lastfm-autocomplete](https://github.com/dmelo/lastfm-autocomplete).
+
 
 [MDownHost.Me](http://mdownhost.me)
 -----------------------------------
