@@ -7,7 +7,7 @@ Tags: linux,dd,vm
 */
 
 On a [previous post](/blog/15/using-dd-and-lzma-to-backup-and-restore-a-disk)
-I have documented how a way to backup and restore a disk, using `dd` and
+I have documented a way to backup and restore a disk, using `dd` and
 `lzma`.
 
 Now, it is time to create a virtual machine out of the compressed backup image
@@ -39,7 +39,7 @@ specify that it is a 64-bit OS, while creating the new VM.
 
 No secret here, use VBoxManage to generate the raw image and then compress it.
 I have found no way to dump the image to stdout in order to pipe it for
-compression. So, I'm building a raw intermediate file:
+compression. So, I'm building a intermediate raw uncompressed file:
 
     VBoxManage clonehd disk.vdi disk.img --format RAW
     lzma -z -T 4 -9e disk.img

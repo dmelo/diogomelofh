@@ -10,7 +10,7 @@ Hi, my name is Diogo Melo.
 
 I am a brazilian software engineer who loves computers, traveling, movies and
 music. I started developing software in 2005, when I startted my B.S in 
-Computer Science. I hope to never stop.
+Computer Science. I hope I never stop.
 
 This site is mainly is about Linux, Web development and some quick geek tricks.
 Whenever I solve some problem and I think it might be useful for others (or
