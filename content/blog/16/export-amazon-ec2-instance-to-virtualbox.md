@@ -21,7 +21,7 @@ therefore is not bound by those restrictions. The basic idea is:
 
 - attach the EBS volume of the target machine on another instance;
 - use dd to dump the volume into a file;
-- download/transfer that file to a more convinient place;
+- download/transfer that file to a more convenient place;
 - reconfigure the image so that it works outside of the cloud;
 - convert the raw image to the desired VM.
 
@@ -48,10 +48,10 @@ On the Amazon console, do the following steps:
 
 1. turn off the machine that will be cloned;
 2. detach the root volume from that machine;
-3. attach the volume on another (auxiliar) machine (it must be attached as a
+3. attach the volume on another (auxiliary) machine (it must be attached as a
 secondary volume);
 4. install lzma (some distros doesn't include it by default);
-5. log into the auxiliar machine and dump the EBS volume into a file.
+5. log into the auxiliary machine and dump the EBS volume into a file.
 
 Considering it is attached as `/dev/xvdf`, you can use the following command
 to accomplish that last step.
@@ -61,7 +61,7 @@ dd if=/dev/xvdf | lzma -z -0 > /opt/ec2.img.lzma
 ```
 
 This command might take a while. After it is done, you can copy
-`/opt/ec2.img.lzma` to your local machine or any other convinient place.
+`/opt/ec2.img.lzma` to your local machine or any other convenient place.
 
 * Obs.: If you rather not turn off the EC2 instance, during this procedure,
 you can try to make a snapshot of the root EBS and create another EBS from it.
@@ -71,7 +71,7 @@ Then, perform the steps on this section on that cloned EBS.
 Reconfigure the image so that it works outside of the cloud
 -----------------------------------------------------------
 
-This step ended up being easier than I had expected. Start by umcompressing
+This step ended up being easier than I had expected. Start by uncompressing
 the image
 
 ```bash
